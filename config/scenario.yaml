@@ -1,0 +1,64 @@
+# 5G RAN Digital Twin - scenario configuration
+# Every experiment reads this file, so changing a value here changes the whole study.
+
+scene:
+  name: munich              # built-in Sionna RT scene (OpenStreetMap-derived city block, ITU materials)
+  area_xy: [-300, 300]      # square area of interest [m] where UEs are dropped
+  seed: 7
+
+carrier:
+  frequency_hz: 3.5e+9      # NR band n78
+  bandwidth_hz: 1.0e+8
+  scs_hz: 3.0e+4           # numerology mu = 1 -> slot = 0.5 ms
+  num_prb: 273              # TS 38.101-1 Table 5.3.2-1 (100 MHz @ 30 kHz)
+  noise_figure_db: 9.0      # UE receiver noise figure
+  overhead: 0.14            # TS 38.306 DL overhead for FR1
+  bler_target: 0.1
+
+ran:
+  sites:                    # gNB sites, each with 3 sectors (RUs) at 0/120/240 deg
+    - {name: A, xy: [-150, -100]}
+    - {name: B, xy: [160, -80]}
+    - {name: C, xy: [0, 170]}
+  sector_azimuths_deg: [0, 120, 240]
+  height_m: 25.0
+  downtilt_deg: 8.0
+  tx_power_dbm: 46.0        # per RU over full 100 MHz
+  antenna_pattern: tr38901  # 3GPP TR 38.901 sector element, 8 dBi
+  bf_gain_db: 0.0           # extra array gain (e.g. +15 dB for 64T64R) - kept 0 for a SISO-equivalent study
+
+ue:
+  height_m: 1.5
+  antenna_pattern: iso
+
+# Ray-tracing fidelity profiles.
+# 'twin'     = the fast digital twin used for decisions and predictions
+# 'physical' = higher-fidelity stand-in for the real network (ground truth)
+raytracing:
+  twin:
+    max_depth: 3
+    samples_per_src: 300000
+    diffraction: true
+    edge_diffraction: true
+    diffuse_reflection: false
+  physical:
+    max_depth: 4
+    samples_per_src: 1000000
+    diffraction: true
+    edge_diffraction: true
+    diffuse_reflection: false   # diffuse scattering is represented by the fading term below (CPU memory)
+
+# Impairments applied ONLY to the 'physical' network (things the twin does not know)
+physical_impairments:
+  ue_position_error_m: 5.0      # twin knows UE position with this GPS-like error
+  shadowing_std_db: 4.0         # unmodelled objects (trees, vehicles, people) - per link
+  fast_fading: rayleigh_on_nlos # small-scale fading the twin does not predict
+  permittivity_scale: 1.4       # true building materials differ from the twin's ITU defaults
+  conductivity_scale: 2.0
+
+experiments:
+  pool_size: 700            # candidate UE positions ray-traced once into the channel database
+  num_ues: 30               # UEs per drop for the main comparison
+  num_drops: 30             # Monte Carlo drops
+  num_slots: 40             # scheduling slots simulated per drop
+  coverage_cell_m: 5.0

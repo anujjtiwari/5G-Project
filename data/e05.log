@@ -1,0 +1,11 @@
+trajectories: 3 [66, 66, 66]
+trajectory 1 simulated
+trajectory 2 simulated
+trajectory 3 simulated
+            thr_t3  thr_b1  sinr_t3  sinr_b1  p10_thr_t3  p10_thr_b1  handovers_t3  handovers_b1
+trajectory                                                                                      
+1            46.05   12.30    21.53    -7.26       20.63         0.0             5             0
+2            33.80    2.08    19.67    -7.67       20.77         0.0            10             1
+3            17.87    5.43     3.49    -8.54        1.43         0.0             7             1
+done
+exit=0

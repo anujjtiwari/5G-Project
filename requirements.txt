@@ -1,0 +1,9 @@
+sionna-rt>=1.0
+numpy
+pandas
+matplotlib
+pyyaml
+trimesh
+shapely
+mapbox-earcut
+requests

@@ -1,0 +1,11 @@
+{
+  "per_ue_logcorr_twin_sync": 0.9848143865857033,
+  "per_ue_logcorr_twin_nosync": 0.5481700761602681,
+  "per_ue_logcorr_38901": 0.4101200269016994,
+  "mean_thr_mae_twin_sync": 4.307142857142857,
+  "mean_thr_mae_twin_nosync": 10.200000000000001,
+  "mean_thr_mae_38901": 14.13857142857143,
+  "change_mae_pp_twin_sync": 2.7666666666666675,
+  "change_mae_pp_twin_nosync": 6.8833333333333355,
+  "change_mae_pp_38901": 18.383333333333336
+}

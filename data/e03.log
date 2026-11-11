@@ -1,0 +1,44 @@
+drop 1/30 done
+drop 2/30 done
+drop 3/30 done
+drop 4/30 done
+drop 5/30 done
+drop 6/30 done
+drop 7/30 done
+drop 8/30 done
+drop 9/30 done
+drop 10/30 done
+drop 11/30 done
+drop 12/30 done
+drop 13/30 done
+drop 14/30 done
+drop 15/30 done
+drop 16/30 done
+drop 17/30 done
+drop 18/30 done
+drop 19/30 done
+drop 20/30 done
+drop 21/30 done
+drop 22/30 done
+drop 23/30 done
+drop 24/30 done
+drop 25/30 done
+drop 26/30 done
+drop 27/30 done
+drop 28/30 done
+drop 29/30 done
+drop 30/30 done
+strategy               B1        B2        T1        T2        T3
+mean_thr_mbps      36.263    36.129    46.594    47.303    52.537
+p5_thr_mbps         0.000     0.000     3.408     4.812     5.674
+p50_thr_mbps       15.337    15.872    27.220    32.784    41.858
+sum_thr_mbps     1087.898  1083.883  1397.834  1419.091  1576.125
+mean_sinr_db        1.087     1.177     8.631    10.052    13.579
+p5_sinr_db        -28.939   -28.534    -2.598    -2.416    -1.583
+mean_interf_dbm   -96.064   -95.991   -98.616   -99.084  -102.889
+mean_cqi            4.509     4.508     5.829     6.504     8.221
+prb_util_pct      100.000   100.000   100.000   100.000    85.401
+jain                0.335     0.335     0.414     0.493     0.551
+outage_pct         26.111    25.889     0.889     2.000     1.556
+cell_se_bps_hz      1.314     1.309     1.682     1.622     1.803
+done

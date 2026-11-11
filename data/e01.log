@@ -1,0 +1,19 @@
+backend: llvm-cpu | RUs: ['A0', 'A120', 'A240', 'B0', 'B120', 'B240', 'C0', 'C120', 'C240']
+twin: traced in 196s, rt links found 54.8%
+twin_est: traced in 191s, rt links found 54.7%
+physical: traced in 730s, rt links found 66.1%
+fill calibration -14.8 dB, filled 70.1% of links
+{
+  "trace_twin_s": 196.1875548362732,
+  "trace_twin_est_s": 191.1093246936798,
+  "trace_physical_s": 730.3795235157013,
+  "coverage_map_s": 15.413426876068115,
+  "backend": "llvm-cpu",
+  "num_positions": 850,
+  "num_rus": 9,
+  "rt_found_twin": 0.5483660130718955,
+  "rt_found_physical": 0.6606535947712419,
+  "fill_calib_db": -14.801581037034566,
+  "filled_frac": 0.701437908496732
+}
+exit=0

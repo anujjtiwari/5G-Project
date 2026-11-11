@@ -1,0 +1,13 @@
+{
+  "trace_twin_s": 405.37501525878906,
+  "trace_twin_est_s": 468.53127002716064,
+  "trace_physical_s": 1724.342628955841,
+  "coverage_map_s": 6.643131971359253,
+  "backend": "llvm-cpu",
+  "num_positions": 1650,
+  "num_rus": 9,
+  "rt_found_twin": 0.9950841750841751,
+  "rt_found_physical": 0.9977104377104377,
+  "fill_calib_db": 6.798116449535769,
+  "filled_frac": 0.004915824915824916
+}

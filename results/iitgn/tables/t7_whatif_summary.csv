@@ -1,0 +1,36 @@
+scenario,description,metric,predicted_twin,predicted_twin_uncal,predicted_38901,actual,abs_err_twin,abs_err_twin_uncal,abs_err_38901
+S0,"Current: 30 UEs, 9 RUs, 100 MHz",Mean UE throughput [Mbps],59.47,30.57,21.87,51.51,7.96,20.94,29.64
+S0,"Current: 30 UEs, 9 RUs, 100 MHz",5th-pct UE throughput [Mbps],16.01,3.53,1.61,13.17,2.85,9.63,11.56
+S0,"Current: 30 UEs, 9 RUs, 100 MHz",Mean SINR [dB],17.08,10.95,7.69,15.43,1.65,4.49,7.75
+S0,"Current: 30 UEs, 9 RUs, 100 MHz",PRB utilisation [%],68.72,68.04,68.49,68.65,0.06,0.61,0.17
+S0,"Current: 30 UEs, 9 RUs, 100 MHz",Outage (<1 Mbps) [%],0.0,4.67,5.67,0.0,0.0,4.67,5.67
+S1,UE density x2 (60 UEs),Mean UE throughput [Mbps],29.06,15.0,10.37,24.15,4.91,9.15,13.78
+S1,UE density x2 (60 UEs),5th-pct UE throughput [Mbps],7.73,2.29,1.09,6.4,1.33,4.11,5.31
+S1,UE density x2 (60 UEs),Mean SINR [dB],16.18,11.83,7.59,14.49,1.69,2.66,6.89
+S1,UE density x2 (60 UEs),PRB utilisation [%],68.55,68.22,67.96,68.32,0.23,0.1,0.36
+S1,UE density x2 (60 UEs),Outage (<1 Mbps) [%],0.33,4.33,5.33,0.33,0.0,4.0,5.0
+S2,UE density x3.3 (100 UEs),Mean UE throughput [Mbps],18.07,8.09,5.72,14.26,3.81,6.17,8.54
+S2,UE density x3.3 (100 UEs),5th-pct UE throughput [Mbps],5.06,0.79,0.59,3.82,1.24,3.03,3.23
+S2,UE density x3.3 (100 UEs),Mean SINR [dB],16.53,11.03,7.24,14.45,2.07,3.43,7.22
+S2,UE density x3.3 (100 UEs),PRB utilisation [%],69.14,68.17,69.11,69.26,0.12,1.09,0.15
+S2,UE density x3.3 (100 UEs),Outage (<1 Mbps) [%],0.0,6.5,10.7,0.1,0.1,6.4,10.6
+S3,Event hotspot: +40 UEs in a 45 m radius,Mean UE throughput [Mbps],23.6,12.98,9.57,19.59,4.01,6.61,10.03
+S3,Event hotspot: +40 UEs in a 45 m radius,5th-pct UE throughput [Mbps],4.64,1.75,1.08,3.41,1.23,1.66,2.33
+S3,Event hotspot: +40 UEs in a 45 m radius,Mean SINR [dB],16.63,10.69,8.03,14.08,2.55,3.39,6.05
+S3,Event hotspot: +40 UEs in a 45 m radius,PRB utilisation [%],69.12,69.25,69.06,69.07,0.06,0.19,0.0
+S3,Event hotspot: +40 UEs in a 45 m radius,Outage (<1 Mbps) [%],0.0,2.86,5.0,0.0,0.0,2.86,5.0
+S4,Carrier reduced to 40 MHz,Mean UE throughput [Mbps],23.25,11.93,8.42,19.85,3.41,7.92,11.43
+S4,Carrier reduced to 40 MHz,5th-pct UE throughput [Mbps],6.03,1.41,0.52,4.89,1.14,3.48,4.36
+S4,Carrier reduced to 40 MHz,Mean SINR [dB],17.05,10.77,7.68,15.33,1.72,4.57,7.65
+S4,Carrier reduced to 40 MHz,PRB utilisation [%],68.8,68.24,68.57,68.77,0.04,0.53,0.19
+S4,Carrier reduced to 40 MHz,Outage (<1 Mbps) [%],0.0,5.67,9.67,0.0,0.0,5.67,9.67
+S5,Energy saving: site B switched off,Mean UE throughput [Mbps],55.39,30.93,26.84,50.1,5.29,19.17,23.26
+S5,Energy saving: site B switched off,5th-pct UE throughput [Mbps],11.53,2.51,4.1,10.4,1.14,7.88,6.29
+S5,Energy saving: site B switched off,Mean SINR [dB],20.9,14.6,12.94,19.5,1.4,4.9,6.56
+S5,Energy saving: site B switched off,PRB utilisation [%],73.11,73.31,72.22,73.03,0.08,0.28,0.81
+S5,Energy saving: site B switched off,Outage (<1 Mbps) [%],0.0,6.0,2.33,0.0,0.0,6.0,2.33
+S6,Roll back to baseline scheduler (B1),Mean UE throughput [Mbps],26.13,23.94,27.66,25.37,0.76,1.44,2.29
+S6,Roll back to baseline scheduler (B1),5th-pct UE throughput [Mbps],0.0,0.0,1.18,0.0,0.0,0.0,1.18
+S6,Roll back to baseline scheduler (B1),Mean SINR [dB],0.28,0.99,4.8,-0.1,0.37,1.09,4.89
+S6,Roll back to baseline scheduler (B1),PRB utilisation [%],100.0,100.0,100.0,100.0,0.0,0.0,0.0
+S6,Roll back to baseline scheduler (B1),Outage (<1 Mbps) [%],28.0,20.33,5.0,26.0,2.0,5.67,21.0

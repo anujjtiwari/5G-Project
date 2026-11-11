@@ -1,0 +1,7 @@
+{
+  "cpu": "x86_64",
+  "cores": 2,
+  "ram_gb": 8.4,
+  "python": "3.13.16",
+  "backend": "llvm-cpu"
+}
